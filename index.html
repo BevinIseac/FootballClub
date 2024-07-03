@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>VSB</title>
+<style>
+body{ 
+     background-image:url("11.jpg");
+     background-size:2000px 1200px;
+     background-repeat:no-repeat;
+     background-position:center;     
+}
+h2.bev
+{
+    color:white;
+}
+#bevin{
+	background:#000000;
+	color:#fff;
+	border-radius:40px;
+	
+}
+</style>
+ <script>
+    function redirectToPage() {
+      var a = document.getElementById("users").value;
+      if (a == "Admin") {
+        window.location.href = "Admin.html";
+      } else if (a == "Player") {
+        window.location.href = "Player.html";
+      } else if (a == "Audience") {
+        window.location.href = "Audience.html";
+      }
+    }
+  </script>
+</head>
+<body>
+
+<center>
+<h2 class ='bev'><b><marquee>Welcome to VSB FootBall Club</marquee></b></h2>
+</center><br><br><br><br><br><br><br><br>
+<center>
+<form onsubmit="redirectToPage(); return false;">
+  <label for="users">Who are you:</label>
+  <select name="users" id="users">
+  <option value=""></option>
+    <option value="Admin">Admin</option>
+    <option value="Player">Player</option>
+    <option value="Audience">Audience</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit" id = 'bevin'>
+  </center>
+</form>
+
+</body>
+</html>

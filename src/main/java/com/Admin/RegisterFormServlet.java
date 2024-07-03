@@ -20,7 +20,7 @@ public class RegisterFormServlet extends HttpServlet {
 		out.println("<html>");
 		out.println("<head>");
 		out.println("<head>");
-		out.println("<link rel ='stylesheet' href='docs/player.css'>");
+		out.println("<link rel ='stylesheet' href='player.css'>");
 		out.println("<body>");
 		out.println("<center>");
 		out.println("<marquee><h1><label class='ise'>Selected Players Info</h1></marquee>");

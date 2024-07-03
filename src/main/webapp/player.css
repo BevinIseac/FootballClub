@@ -1,0 +1,48 @@
+@charset "UTF-8";
+body{
+	background-image:url("1.webp");
+     background-size:1400px 800px;
+     background-repeat:no-repeat;
+     background-position:center;
+
+}
+
+.input-label
+{
+	text-align:center;
+    color:#0047AB; }
+
+.ise
+{
+	text-align:center;
+    color:#000000;
+}
+div.iseac{
+	background-color:rgba(255,255,255,0.5);
+	box-shadow:0 0 10px rgba(0 0 0, 0.5);
+	text-align:center;
+	border-radius:50px;
+	width:20%;
+	padding:40px;
+	justify-content: center;
+	align-items:center;
+	display: flex;
+	margin:0;
+	height:50vh;
+   
+
+	
+	
+}
+
+.ss{
+	font-weight:bold;
+}
+#bharath{
+	background:#000000;
+	color:#fff;
+	border-radius:40px;
+	
+}
+
+    

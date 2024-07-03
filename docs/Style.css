@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body{
+     background-image:url("1.jpg");
+     background-repeat:no-repeat;
+     background-size:1400px 700px
+
+}
+a.hover{
+	background-color:silver;
+}
+a.link{
+	color:green;
+	padding:5px 5px;
+	text-decoration:none;
+	display:inline-block;
+}div.y1{
+	padding-left:3%;
+}

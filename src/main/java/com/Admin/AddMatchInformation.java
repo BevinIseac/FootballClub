@@ -23,7 +23,7 @@ public class AddMatchInformation extends HttpServlet {
 		ArrayList<String> list = (ArrayList<String>)request.getAttribute("error");
 		out.println("<html>");
 		out.println("<head>");
-		out.println("<link rel ='stylesheet' href='player.css'>");
+		out.println("<link rel ='stylesheet' href='docs/player.css'>");
 		out.println("</head>");
 		out.println("<body>");
 		

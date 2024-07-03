@@ -75,7 +75,7 @@ public class RegisterPlayersController extends HttpServlet {
 		list.add("Enter the date of the match");
 	if(!list.isEmpty()) {
 		request.setAttribute("error", list);
-		RequestDispatcher rd = request.getRequestDispatcher("AddPlayers");
+		RequestDispatcher rd = request.getRequestDispatcher("docs/AddPlayers");
 		rd.forward(request, response);
 	}
 	
@@ -85,7 +85,7 @@ public class RegisterPlayersController extends HttpServlet {
 	
 				request.setAttribute("msg", msg);
 				
-				getServletContext().getRequestDispatcher("/Message.html").forward(request,response);
+				getServletContext().getRequestDispatcher("docs/Message.html").forward(request,response);
 	}
 
 	

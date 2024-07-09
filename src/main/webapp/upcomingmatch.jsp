@@ -25,7 +25,7 @@ body{
 <center><table border ='2'>
 <tr><th> Title</th><th>Place</th><th>Match Date</th>
 <%
-ResultSet rs = new MatchDao().RetrieveMatch();
+ResultSet rs = new MatchDao().retrieveMatch();
 while(rs.next()){
 %>
 <tr><th><%= rs.getString(1) %></th><th><%=rs.getString(2) %></th><th><%=rs.getString(3) %></th></tr>

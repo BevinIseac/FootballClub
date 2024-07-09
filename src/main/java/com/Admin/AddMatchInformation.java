@@ -14,35 +14,33 @@ import javax.servlet.http.HttpServletResponse;
 public class AddMatchInformation extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
         response.setContentType("text/html");
-        ArrayList<String> list = (ArrayList<String>) request.getAttribute("error");
+        ArrayList<String> list = (ArrayList<String>)request.getAttribute("error");
         out.println("<html>");
         out.println("<head>");
-        out.println("<link rel='stylesheet' href='player.css'>");
+        out.println("<link rel ='stylesheet' href='player.css'>");  // Ensure player.css is located correctly
         out.println("</head>");
         out.println("<body>");
-        
-        if (list != null) {
+
+        if(list != null) {
             Iterator<String> itr = list.iterator();
             out.println("<ul>");
-            while (itr.hasNext()) {
+            while(itr.hasNext()) {
                 out.println("<li>" + itr.next() + "</li>");
             }
             out.println("</ul>");
         }
+
         out.println("<center>");
-        out.println("<h2><marquee><div class='ss'><label class='ise'>Add Match Info</div></marquee></h2><br><br><br><br>");
+        out.println("<h2><marquee><div class='ss'><label class='ise'>Add Match Info</div></marquee><h2><br><br><br><br>");
         out.println("<form class='bevin' action='AddMAtchInfoCont' method='post'>");
         out.println("<input type='text' name='title' placeholder='Title' required><br><br>");
         out.println("<input type='text' name='place' placeholder='Place' required><br><br>");
         out.println("<input type='date' name='date' placeholder='Date' required><br><br>");
         out.println("<input type='submit' name='Submit' id='bharath'>");
         out.println("</center></form></body></html>");
-    }
-
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doGet(request, response);
     }
 }

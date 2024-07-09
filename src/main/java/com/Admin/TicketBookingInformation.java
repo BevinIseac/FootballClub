@@ -24,7 +24,7 @@ public class TicketBookingInformation extends HttpServlet {
 		out.println("<html>");
 		out.println("<head>");
 		out.println("<link rel ='stylesheet' href='player.css'>");
-		out.println("/head");
+		out.println("</head>");
 		out.println("<body>");
 		ArrayList<String> list = (ArrayList<String>)request.getAttribute("error");
 		if(list!=null){
